@@ -5,7 +5,7 @@
 - AI/ML
 
 ## 📫 How to reach me
-- LinkedIn: [Crystal]([https://linkedin.com/in/yourprofile](https://www.linkedin.com/in/crystal-ng-383aaa134/))
+- LinkedIn: [Crystal](https://www.linkedin.com/in/crystal-ng-383aaa134/)
 - Email: crystalngshulu@gmail.com
 <!--
 ## 📊 GitHub Stats
