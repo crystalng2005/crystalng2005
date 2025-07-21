@@ -1,11 +1,11 @@
-# Hey👋 I'm Crystal
+## Hey👋 I'm Crystal
 
-## 🌱 I'm currently learning
+#### 🌱 I'm currently learning
 - Haskell
 - AI/ML
 
-## 📫 How to reach me
-- LinkedIn: [Crystal](https://www.linkedin.com/in/crystal-ng-383aaa134/)
+#### 📫 How to reach me
+- LinkedIn: [Crystal Ng](https://www.linkedin.com/in/crystal-ng-383aaa134/)
 - Email: crystalngshulu@gmail.com
 <!--
 ## 📊 GitHub Stats
