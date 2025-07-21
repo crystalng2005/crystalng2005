@@ -8,10 +8,6 @@
 - LinkedIn: [Crystal]([https://linkedin.com/in/yourprofile](https://www.linkedin.com/in/crystal-ng-383aaa134/))
 - Email: crystalngshulu@gmail.com
 
-## ⚡ Fun fact
-Minecraft commands sparked my interest in coding
-
-
 ## 📊 GitHub Stats
 ![Your GitHub stats](https://github-readme-stats.vercel.app/api?username=crystalng2005&show_icons=true&theme=radical)
 
