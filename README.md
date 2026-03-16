@@ -7,6 +7,7 @@
 #### 📫 How to reach me
 - LinkedIn: [Crystal Ng](https://www.linkedin.com/in/crystal-ng-383aaa134/)
 - Email: crystalngshulu@gmail.com
+
 <!--
 ## 📊 GitHub Stats
 ![Your GitHub stats](https://github-readme-stats.vercel.app/api?username=crystalng2005&show_icons=true&theme=radical)
@@ -14,8 +15,6 @@
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=crystalng2005&layout=compact)
 
 **crystalng2005/crystalng2005** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-![Crystal's Stats](https://github-readme-stats-eight-theta.vercel.app/api?username=ipeleteiro&show_icons=true&theme=algolia)
 
 Here are some ideas to get you started:
 
