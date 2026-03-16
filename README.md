@@ -15,6 +15,8 @@
 
 **crystalng2005/crystalng2005** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
+![Crystal's Stats](https://github-readme-stats-eight-theta.vercel.app/api?username=ipeleteiro&show_icons=true&theme=algolia)
+
 Here are some ideas to get you started:
 
 - 🔭 I’m currently working on ...
