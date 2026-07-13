@@ -4,9 +4,9 @@
   <img alt="Crystal Ng profile banner with animated orbit rings, focus areas, and a polished dark/light gradient hero." src="assets/light.svg">
 </picture>
 
-## Hi, I'm Crystal.
+<!-- ## Hi, I'm Crystal.
 
-3rd year CS @ University of Wawrick | Secretary @ UWCS | Intern @ WMG
+3rd year CS @ University of Wawrick | Secretary @ UWCS | Intern @ WMG -->
 
 ### Tech Stack
 
@@ -33,15 +33,17 @@ A simulation of airplanes taking off and landing in an airport based on user-con
 <table>
   <tr>
     <td>
-      <img alt="Crystal's GitHub stats" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=crystalng2005&theme=github_dark" />
+      <img alt="Crystal's GitHub stats" src="https://github-readme-stats.vercel.app/api?username=crystalng2005&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&theme=tokyonight&cache_seconds=21600" />
     </td>
     <td>
-      <img alt="Crystal's top languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=crystalng2005&layout=compact&hide_border=true&theme=transparent" />
+      <img alt="Crystal's top languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=crystalng2005&layout=compact&langs_count=6&hide_border=true&theme=tokyonight&cache_seconds=21600" />
     </td>
   </tr>
 </table>
 
-<img alt="Crystal's contribution overview" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=crystalng2005&theme=github_dark" />
+<img alt="Crystal's contribution streak" src="https://streak-stats.demolab.com?user=crystalng2005&theme=tokyonight&hide_border=true&date_format=j%20M%5B%20Y%5D" />
+
+<img alt="Crystal's contribution overview" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=crystalng2005&theme=tokyonight" />
 
 ### Here is how I get involved in my community!
 
