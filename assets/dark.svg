@@ -1,91 +1,106 @@
-<svg width="900" height="300" viewBox="0 0 900 300" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="1400" height="420" viewBox="0 0 1400 420" xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink">
   <defs>
-    <radialGradient id="vortexGlow" cx="50%" cy="50%" r="60%">
-      <stop offset="0%" stop-color="#24194c"/>
-      <stop offset="40%" stop-color="#141433" stop-opacity="1"/>
-      <stop offset="100%" stop-color="#0e0e22" stop-opacity="1"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#070816" />
+      <stop offset="50%" stop-color="#0f1230" />
+      <stop offset="100%" stop-color="#090b18" />
+    </linearGradient>
+    <radialGradient id="halo" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#ff3fd1" stop-opacity="0.55" />
+      <stop offset="45%" stop-color="#6a35ff" stop-opacity="0.24" />
+      <stop offset="100%" stop-color="#070816" stop-opacity="0" />
     </radialGradient>
-    <linearGradient id="neonGradient1" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#6a35ff"/>
-      <stop offset="100%" stop-color="#ff1aff"/>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#6a35ff" />
+      <stop offset="50%" stop-color="#00d4ff" />
+      <stop offset="100%" stop-color="#ff4fd8" />
     </linearGradient>
-    <linearGradient id="neonGradient2" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#00ffff"/>
-      <stop offset="100%" stop-color="#ff1aff"/>
+    <linearGradient id="accentSoft" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1e2350" />
+      <stop offset="100%" stop-color="#10152c" />
     </linearGradient>
-    
-    <path id="data_path_python" d="M 450 150 Q 550 50 650 100 T 800 150" fill="none" />
-    <path id="data_path_js" d="M 450 150 Q 500 250 600 200 T 750 250" fill="none" />
-    <path id="data_path_chart" d="M 450 150 Q 300 250 150 200 T 100 150" fill="none" />
-    
-    <g id="skill_python" opacity="0">
-      <circle cx="0" cy="0" r="15" fill="#1e1e3e" stroke="#6a35ff" stroke-width="2"/>
-      <text x="0" y="5" font-size="12" font-weight="700" font-family="Courier New, Courier, monospace" fill="#6a35ff" text-anchor="middle">PYTHON</text>
-    </g>
-    <g id="skill_js" opacity="0">
-      <circle cx="0" cy="0" r="15" fill="#1e1e3e" stroke="#ff1aff" stroke-width="2"/>
-      <text x="0" y="5" font-size="12" font-weight="700" font-family="Courier New, Courier, monospace" fill="#ff1aff" text-anchor="middle">JAVASCRIPT</text>
-    </g>
-    </defs>
+    <filter id="blurGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="10" />
+    </filter>
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
+      <path d="M 36 0 L 0 0 0 36" fill="none" stroke="#ffffff" stroke-opacity="0.05"
+        stroke-width="1" />
+    </pattern>
+  </defs>
 
-  <rect width="100%" height="100%" fill="#0a0a1a"/>
-  
-  <g transform="translate(450,150)" id="vortex_main">
-    <circle cx="0" cy="0" r="150" fill="url(#vortexGlow)" opacity="1">
-      <animate attributeName="opacity" values="1;0.7;1" dur="4s" repeatCount="indefinite" />
-      <animateTransform attributeName="transform" type="scale" values="1;1.05;1" dur="6s" repeatCount="indefinite" additive="sum"/>
+  <rect width="1400" height="420" fill="url(#bg)" />
+  <rect width="1400" height="420" fill="url(#grid)" />
+  <circle cx="1170" cy="90" r="170" fill="url(#halo)" filter="url(#blurGlow)" />
+  <circle cx="260" cy="340" r="140" fill="#00d4ff" opacity="0.08" filter="url(#blurGlow)" />
+
+  <g transform="translate(70,70)">
+    <circle cx="120" cy="120" r="120" fill="url(#accentSoft)" stroke="url(#accent)"
+      stroke-width="2.5" />
+    <circle cx="120" cy="120" r="92" fill="none" stroke="#ffffff" stroke-opacity="0.12"
+      stroke-width="1" stroke-dasharray="6 10" />
+    <circle cx="120" cy="120" r="70" fill="none" stroke="url(#accent)" stroke-width="3"
+      stroke-dasharray="14 8">
+      <animateTransform attributeName="transform" type="rotate" from="0 120 120" to="360 120 120"
+        dur="28s" repeatCount="indefinite" />
     </circle>
-    
-    <g>
-      <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="20s" repeatCount="indefinite" />
-      <path d="M-100 0 A100 100 0 1 1 100 0" fill="none" stroke="url(#neonGradient1)" stroke-width="3" stroke-dasharray="10 5"/>
-      <path d="M0 -100 A100 100 0 1 1 0 100" fill="none" stroke="url(#neonGradient2)" stroke-width="3" stroke-dasharray="10 5" opacity="0.6"/>
-    </g>
-  </g>
-  
-  <g>
-    <use xlink:href="#skill_python">
-      <animate attributeName="opacity" values="0;1;1" dur="2s" begin="0.5s" fill="freeze" />
-      <animateMotion dur="4s" repeatCount="indefinite" fill="freeze">
-        <mpath xlink:href="#data_path_python"/>
-      </animateMotion>
-    </use>
-    <use xlink:href="#skill_js">
-      <animate attributeName="opacity" values="0;1;1" dur="2s" begin="1.5s" fill="freeze" />
-      <animateMotion dur="4s" repeatCount="indefinite" fill="freeze" rotate="auto">
-        <mpath xlink:href="#data_path_js"/>
-      </animateMotion>
-    </use>
-    
-    <g transform="translate(50,220)" opacity="0">
-        <animate attributeName="opacity" values="0;1;1" dur="1s" begin="3s" fill="freeze" />
-        <rect width="15" height="15" fill="#141433" stroke="#2a2a6a">
-            <animate attributeName="fill" values="#141433;#141433;#6a35ff;#141433" dur="5s" begin="3s" repeatCount="indefinite" />
-        </rect>
-        <rect x="20" width="15" height="15" fill="#141433" stroke="#2a2a6a">
-            <animate attributeName="fill" values="#141433;#141433;#6a35ff;#141433" dur="5s" begin="3.2s" repeatCount="indefinite" />
-        </rect>
-        <rect x="40" width="15" height="15" fill="#141433" stroke="#2a2a6a">
-            <animate attributeName="fill" values="#141433;#141433;#6a35ff;#141433" dur="5s" begin="3.4s" repeatCount="indefinite" />
-        </rect>
-    </g>
-  </g>
-  
-  <text x="800" y="50" font-size="14" font-family="Courier New, Courier, monospace" fill="#ff1aff" text-anchor="end" opacity="0">
-    Impacting with code...
-    <animate attributeName="opacity" values="0;1;1" dur="1s" begin="0.1s" fill="freeze" />
-  </text>
-  
-  <g transform="translate(50,50)" opacity="0">
-    <animate attributeName="opacity" values="0;1;1" dur="1s" begin="0.2s" fill="freeze" />
-    <text x="0" y="20" font-size="24" font-weight="900" font-family="Helvetica, Arial, sans-serif" fill="#ffffff">crystalng2005</text>
-    <text x="0" y="50" font-size="12" font-family="Courier New, Courier, monospace" fill="#8888ff" opacity="0.8">Continuous code impact</text>
-  </g>
-  
-  <g transform="translate(50, 270)" opacity="0">
-    <animate attributeName="opacity" values="0;1;1" dur="1s" begin="2s" fill="freeze" />
-    <text x="0" y="0" font-size="20" font-weight="900" font-family="Helvetica, Arial, sans-serif" fill="#6a35ff">24</text>
-    <text x="30" y="0" font-size="12" font-family="Courier New, Courier, monospace" fill="#8888ff" opacity="0.8">STREAK</text>
+    <circle cx="120" cy="120" r="46" fill="#090b18" stroke="#ffffff" stroke-opacity="0.1" />
+    <text x="120" y="132" text-anchor="middle" font-size="42" font-weight="900"
+      font-family="Helvetica, Arial, sans-serif" fill="#ffffff">CN</text>
   </g>
 
+  <g transform="translate(330,80)">
+    <text x="0" y="0" font-size="18" font-weight="700" font-family="Courier New, Courier, monospace"
+      fill="#9aa7ff" letter-spacing="2">PROFILE // BANNER MODE</text>
+    <text x="0" y="64" font-size="62" font-weight="900" font-family="Helvetica, Arial, sans-serif"
+      fill="#ffffff">Crystal Ng</text>
+    <text x="0" y="104" font-size="24" font-weight="600" font-family="Helvetica, Arial, sans-serif"
+      fill="#dfe5ff" opacity="0.94">Learning Haskell and building toward AI / ML</text>
+
+    <g transform="translate(0,138)">
+      <rect x="0" y="0" rx="16" ry="16" width="172" height="44" fill="#141937" stroke="#6a35ff"
+        stroke-opacity="0.7" />
+      <text x="86" y="28" text-anchor="middle" font-size="18" font-weight="700"
+        font-family="Courier New, Courier, monospace" fill="#ffffff">HASKELL</text>
+      <rect x="190" y="0" rx="16" ry="16" width="188" height="44" fill="#141937" stroke="#00d4ff"
+        stroke-opacity="0.7" />
+      <text x="284" y="28" text-anchor="middle" font-size="18" font-weight="700"
+        font-family="Courier New, Courier, monospace" fill="#ffffff">AI / ML</text>
+    </g>
+
+    <g transform="translate(0,214)">
+      <text x="0" y="0" font-size="16" font-weight="700"
+        font-family="Courier New, Courier, monospace" fill="#9aa7ff" letter-spacing="1.4">REACH OUT</text>
+      <text x="0" y="36" font-size="20" font-weight="600" font-family="Helvetica, Arial, sans-serif"
+        fill="#ffffff">LinkedIn: crystal-ng-383aaa134</text>
+      <text x="0" y="68" font-size="20" font-weight="600" font-family="Helvetica, Arial, sans-serif"
+        fill="#ffffff">Email: crystalngshulu@gmail.com</text>
+    </g>
+  </g>
+
+  <g transform="translate(980,78)">
+    <rect x="0" y="0" width="340" height="264" rx="28" fill="#0e1124" stroke="#ffffff"
+      stroke-opacity="0.08" />
+    <rect x="20" y="20" width="300" height="224" rx="22" fill="#111733" stroke="url(#accent)"
+      stroke-opacity="0.65" />
+    <text x="40" y="58" font-size="18" font-weight="700"
+      font-family="Courier New, Courier, monospace" fill="#9aa7ff" letter-spacing="1.5">CURRENTLY
+      SHIP-WORTHY</text>
+    <g transform="translate(40,88)">
+      <circle cx="10" cy="10" r="10" fill="#6a35ff" />
+      <text x="34" y="16" font-size="18" font-family="Helvetica, Arial, sans-serif" fill="#ffffff">Clean
+        profile intro in one banner</text>
+      <circle cx="10" cy="54" r="10" fill="#00d4ff" />
+      <text x="34" y="60" font-size="18" font-family="Helvetica, Arial, sans-serif" fill="#ffffff">Dark
+        and light theme support</text>
+      <circle cx="10" cy="98" r="10" fill="#ff4fd8" />
+      <text x="34" y="104" font-size="18" font-family="Helvetica, Arial, sans-serif" fill="#ffffff">No
+        extra text needed below</text>
+    </g>
+    <path d="M40 200 C120 168, 202 236, 280 196" fill="none" stroke="url(#accent)" stroke-width="3"
+      stroke-linecap="round" />
+    <circle cx="40" cy="200" r="5" fill="#6a35ff" />
+    <circle cx="160" cy="186" r="5" fill="#00d4ff" />
+    <circle cx="280" cy="196" r="5" fill="#ff4fd8" />
+  </g>
 </svg>
