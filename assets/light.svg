@@ -52,10 +52,9 @@
             font-family="ui-monospace, SFMono-Regular, Consolas, monospace" fill="#2563eb"
             letter-spacing="3">WARWICK CS / UWCS</text>
         <text x="32" y="112" font-size="38" font-weight="800"
-            font-family="Inter, Segoe UI, Arial, sans-serif" fill="#0f172a">Crystal Ng</text>
+            font-family="Inter, Segoe UI, Arial, sans-serif" fill="#0f172a">Hi, I'm Crystal!</text>
         <text x="32" y="140" font-size="15" font-family="Inter, Segoe UI, Arial, sans-serif"
-            fill="#475569">2nd year CS student, UWCS Secretary, and builder focused on Python
-            parallelization research.</text>
+            fill="#475569">3rd year CS @ University of Wawrick | Secretary @ UWCS | Intern @ WMG</text>
 
         <g transform="translate(34 168)"
             font-family="ui-monospace, SFMono-Regular, Consolas, monospace">

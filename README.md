@@ -6,7 +6,7 @@
 
 ## Hi, I'm Crystal.
 
-2nd year CS student at the University of Warwick and Secretary of UWCS, focused on Python parallelization research, functional programming, and software that stays fast under pressure.
+3rd year CS @ University of Wawrick | Secretary @ UWCS | Intern @ WMG
 
 ### Tech Stack
 
@@ -20,13 +20,13 @@
 
 ### Featured Projects
 
-**[poker-hand-detection-engine](https://github.com/crystalng2005/poker-hand-detection-engine)**
+**[UBiasCV](https://github.com/MikeyMictan1/UBiasCV)**
 
-A Haskell remake of Balatro's round one that showcases game logic, rules handling, and compact functional design.
+A tool to flag gender bias in AI-generated feedback for CVs.
 
-**[gridgame-parser](https://github.com/crystalng2005/gridgame-parser)**
+**[Airport Simulation](https://github.com/crystalng2005/airport-simulation)**
 
-A 3x3 grid game parser in Haskell that highlights careful parsing, tidy abstractions, and lightweight problem decomposition.
+A simulation of airplanes taking off and landing in an airport based on user-configured runway settings.
 
 ### GitHub Stats
 
@@ -43,13 +43,16 @@ A 3x3 grid game parser in Haskell that highlights careful parsing, tidy abstract
 
 <img alt="Crystal's contribution overview" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=crystalng2005&theme=github_dark" />
 
-### Leadership & Community
+### Here is how I get involved in my community!
 
-Secretary of UWCS, with a focus on keeping technical spaces organized, welcoming, and easy to contribute to.
+- Secretary and Gender Inclusivity Officer of Computing Society
+- Department of Computer Science Ambassador
+- Scholar Ambassador at the University of Warwick
 
-### Personality & Icebreakers
+### A little bit about myself!
 
-Outside of code, I’m usually bouldering, playing badminton, thinking through philosophy, or learning enough first-aid to be useful when it matters.
+In terms of sports, I love bouldering and playing badminton with my friends. And, of course watching rom-com genres in between :)
+
 
 ### Contact
 
