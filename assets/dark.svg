@@ -1,106 +1,93 @@
-<svg width="1400" height="420" viewBox="0 0 1400 420" xmlns="http://www.w3.org/2000/svg"
-  xmlns:xlink="http://www.w3.org/1999/xlink">
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#070816" />
-      <stop offset="50%" stop-color="#0f1230" />
-      <stop offset="100%" stop-color="#090b18" />
-    </linearGradient>
-    <radialGradient id="halo" cx="50%" cy="50%" r="60%">
-      <stop offset="0%" stop-color="#ff3fd1" stop-opacity="0.55" />
-      <stop offset="45%" stop-color="#6a35ff" stop-opacity="0.24" />
-      <stop offset="100%" stop-color="#070816" stop-opacity="0" />
-    </radialGradient>
-    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#6a35ff" />
-      <stop offset="50%" stop-color="#00d4ff" />
-      <stop offset="100%" stop-color="#ff4fd8" />
-    </linearGradient>
-    <linearGradient id="accentSoft" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#1e2350" />
-      <stop offset="100%" stop-color="#10152c" />
-    </linearGradient>
-    <filter id="blurGlow" x="-40%" y="-40%" width="180%" height="180%">
-      <feGaussianBlur stdDeviation="10" />
-    </filter>
-    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
-      <path d="M 36 0 L 0 0 0 36" fill="none" stroke="#ffffff" stroke-opacity="0.05"
-        stroke-width="1" />
-    </pattern>
-  </defs>
+<svg width="1200" height="360" viewBox="0 0 1200 360" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="bgDark" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#050816" />
+            <stop offset="55%" stop-color="#0b1230" />
+            <stop offset="100%" stop-color="#02040a" />
+        </linearGradient>
+        <radialGradient id="bgGlowDark" cx="40%" cy="35%" r="70%">
+            <stop offset="0%" stop-color="#5b7cfa" stop-opacity="0.18" />
+            <stop offset="50%" stop-color="#7c3aed" stop-opacity="0.08" />
+            <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+        </radialGradient>
+        <linearGradient id="panelDark" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#0b1022" />
+            <stop offset="100%" stop-color="#070b18" />
+        </linearGradient>
+        <linearGradient id="edgeDark" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#60a5fa" />
+            <stop offset="50%" stop-color="#7c3aed" />
+            <stop offset="100%" stop-color="#22d3ee" />
+        </linearGradient>
+    </defs>
 
-  <rect width="1400" height="420" fill="url(#bg)" />
-  <rect width="1400" height="420" fill="url(#grid)" />
-  <circle cx="1170" cy="90" r="170" fill="url(#halo)" filter="url(#blurGlow)" />
-  <circle cx="260" cy="340" r="140" fill="#00d4ff" opacity="0.08" filter="url(#blurGlow)" />
+    <rect width="1200" height="360" fill="url(#bgDark)" />
+    <rect width="1200" height="360" fill="url(#bgGlowDark)" />
 
-  <g transform="translate(70,70)">
-    <circle cx="120" cy="120" r="120" fill="url(#accentSoft)" stroke="url(#accent)"
-      stroke-width="2.5" />
-    <circle cx="120" cy="120" r="92" fill="none" stroke="#ffffff" stroke-opacity="0.12"
-      stroke-width="1" stroke-dasharray="6 10" />
-    <circle cx="120" cy="120" r="70" fill="none" stroke="url(#accent)" stroke-width="3"
-      stroke-dasharray="14 8">
-      <animateTransform attributeName="transform" type="rotate" from="0 120 120" to="360 120 120"
-        dur="28s" repeatCount="indefinite" />
-    </circle>
-    <circle cx="120" cy="120" r="46" fill="#090b18" stroke="#ffffff" stroke-opacity="0.1" />
-    <text x="120" y="132" text-anchor="middle" font-size="42" font-weight="900"
-      font-family="Helvetica, Arial, sans-serif" fill="#ffffff">CN</text>
-  </g>
-
-  <g transform="translate(330,80)">
-    <text x="0" y="0" font-size="18" font-weight="700" font-family="Courier New, Courier, monospace"
-      fill="#9aa7ff" letter-spacing="2">PROFILE // BANNER MODE</text>
-    <text x="0" y="64" font-size="62" font-weight="900" font-family="Helvetica, Arial, sans-serif"
-      fill="#ffffff">Crystal Ng</text>
-    <text x="0" y="104" font-size="24" font-weight="600" font-family="Helvetica, Arial, sans-serif"
-      fill="#dfe5ff" opacity="0.94">Learning Haskell and building toward AI / ML</text>
-
-    <g transform="translate(0,138)">
-      <rect x="0" y="0" rx="16" ry="16" width="172" height="44" fill="#141937" stroke="#6a35ff"
-        stroke-opacity="0.7" />
-      <text x="86" y="28" text-anchor="middle" font-size="18" font-weight="700"
-        font-family="Courier New, Courier, monospace" fill="#ffffff">HASKELL</text>
-      <rect x="190" y="0" rx="16" ry="16" width="188" height="44" fill="#141937" stroke="#00d4ff"
-        stroke-opacity="0.7" />
-      <text x="284" y="28" text-anchor="middle" font-size="18" font-weight="700"
-        font-family="Courier New, Courier, monospace" fill="#ffffff">AI / ML</text>
+    <g opacity="0.18" stroke="#94a3b8" stroke-width="1">
+        <path d="M0 60H1200M0 120H1200M0 180H1200M0 240H1200M0 300H1200" />
+        <path
+            d="M80 0V360M200 0V360M320 0V360M440 0V360M560 0V360M680 0V360M800 0V360M920 0V360M1040 0V360M1160 0V360" />
     </g>
 
-    <g transform="translate(0,214)">
-      <text x="0" y="0" font-size="16" font-weight="700"
-        font-family="Courier New, Courier, monospace" fill="#9aa7ff" letter-spacing="1.4">REACH OUT</text>
-      <text x="0" y="36" font-size="20" font-weight="600" font-family="Helvetica, Arial, sans-serif"
-        fill="#ffffff">LinkedIn: crystal-ng-383aaa134</text>
-      <text x="0" y="68" font-size="20" font-weight="600" font-family="Helvetica, Arial, sans-serif"
-        fill="#ffffff">Email: crystalngshulu@gmail.com</text>
-    </g>
-  </g>
+    <g transform="translate(70 30)">
+        <rect x="0" y="0" width="1060" height="300" rx="20" fill="url(#panelDark)"
+            stroke="url(#edgeDark)" stroke-width="1.5" />
+        <rect x="0.5" y="0.5" width="1059" height="299" rx="19.5" fill="none" stroke="#ffffff"
+            stroke-opacity="0.06" />
 
-  <g transform="translate(980,78)">
-    <rect x="0" y="0" width="340" height="264" rx="28" fill="#0e1124" stroke="#ffffff"
-      stroke-opacity="0.08" />
-    <rect x="20" y="20" width="300" height="224" rx="22" fill="#111733" stroke="url(#accent)"
-      stroke-opacity="0.65" />
-    <text x="40" y="58" font-size="18" font-weight="700"
-      font-family="Courier New, Courier, monospace" fill="#9aa7ff" letter-spacing="1.5">CURRENTLY
-      SHIP-WORTHY</text>
-    <g transform="translate(40,88)">
-      <circle cx="10" cy="10" r="10" fill="#6a35ff" />
-      <text x="34" y="16" font-size="18" font-family="Helvetica, Arial, sans-serif" fill="#ffffff">Clean
-        profile intro in one banner</text>
-      <circle cx="10" cy="54" r="10" fill="#00d4ff" />
-      <text x="34" y="60" font-size="18" font-family="Helvetica, Arial, sans-serif" fill="#ffffff">Dark
-        and light theme support</text>
-      <circle cx="10" cy="98" r="10" fill="#ff4fd8" />
-      <text x="34" y="104" font-size="18" font-family="Helvetica, Arial, sans-serif" fill="#ffffff">No
-        extra text needed below</text>
+        <rect x="18" y="16" width="1024" height="22" rx="11" fill="#0d1328" stroke="#1f2a4d"
+            stroke-width="1" />
+        <circle cx="38" cy="27" r="5" fill="#fb7185" />
+        <circle cx="56" cy="27" r="5" fill="#fbbf24" />
+        <circle cx="74" cy="27" r="5" fill="#34d399" />
+        <text x="100" y="31" font-size="11"
+            font-family="ui-monospace, SFMono-Regular, Consolas, monospace" fill="#cbd5e1">crystalng2005
+            / README.md</text>
+        <text x="1018" y="31" text-anchor="end" font-size="11"
+            font-family="ui-monospace, SFMono-Regular, Consolas, monospace" fill="#94a3b8">profile
+            terminal</text>
+
+        <text x="32" y="62" font-size="12"
+            font-family="ui-monospace, SFMono-Regular, Consolas, monospace" fill="#93c5fd"
+            letter-spacing="3">WARWICK CS / UWCS</text>
+        <text x="32" y="112" font-size="38" font-weight="800"
+            font-family="Inter, Segoe UI, Arial, sans-serif" fill="#f8fafc">Crystal Ng</text>
+        <text x="32" y="140" font-size="15" font-family="Inter, Segoe UI, Arial, sans-serif"
+            fill="#cbd5e1">2nd year CS student, UWCS Secretary, and builder focused on Python
+            parallelization research.</text>
+
+        <g transform="translate(34 168)"
+            font-family="ui-monospace, SFMono-Regular, Consolas, monospace">
+            <rect x="0" y="0" width="160" height="26" rx="13" fill="#0b1020" stroke="#8b5cf6"
+                stroke-opacity="0.55" />
+            <text x="16" y="17" font-size="12" fill="#c4b5fd">Python</text>
+            <rect x="174" y="0" width="116" height="26" rx="13" fill="#0b1020" stroke="#22d3ee"
+                stroke-opacity="0.45" />
+            <text x="192" y="17" font-size="12" fill="#a5f3fc">Java</text>
+            <rect x="304" y="0" width="116" height="26" rx="13" fill="#0b1020" stroke="#f472b6"
+                stroke-opacity="0.45" />
+            <text x="322" y="17" font-size="12" fill="#fbcfe8">C++</text>
+            <rect x="434" y="0" width="126" height="26" rx="13" fill="#0b1020" stroke="#94a3b8"
+                stroke-opacity="0.45" />
+            <text x="452" y="17" font-size="12" fill="#e2e8f0">Haskell</text>
+        </g>
+
+        <g transform="translate(34 208)"
+            font-family="ui-monospace, SFMono-Regular, Consolas, monospace">
+            <rect x="0" y="0" width="78" height="24" rx="12" fill="#0b1020" stroke="#8b5cf6"
+                stroke-opacity="0.4" />
+            <text x="14" y="16" font-size="11" fill="#ddd6fe">Git</text>
+            <rect x="90" y="0" width="92" height="24" rx="12" fill="#0b1020" stroke="#22d3ee"
+                stroke-opacity="0.4" />
+            <text x="108" y="16" font-size="11" fill="#cffafe">Linux</text>
+            <rect x="194" y="0" width="92" height="24" rx="12" fill="#0b1020" stroke="#f472b6"
+                stroke-opacity="0.4" />
+            <text x="212" y="16" font-size="11" fill="#fce7f3">LaTeX</text>
+            <rect x="298" y="0" width="124" height="24" rx="12" fill="#0b1020" stroke="#94a3b8"
+                stroke-opacity="0.4" />
+            <text x="316" y="16" font-size="11" fill="#e2e8f0">Parallelism</text>
+        </g>
+
     </g>
-    <path d="M40 200 C120 168, 202 236, 280 196" fill="none" stroke="url(#accent)" stroke-width="3"
-      stroke-linecap="round" />
-    <circle cx="40" cy="200" r="5" fill="#6a35ff" />
-    <circle cx="160" cy="186" r="5" fill="#00d4ff" />
-    <circle cx="280" cy="196" r="5" fill="#ff4fd8" />
-  </g>
 </svg>
