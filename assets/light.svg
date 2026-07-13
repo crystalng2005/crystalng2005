@@ -1,0 +1,87 @@
+<svg width="900" height="300" viewBox="0 0 900 300" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <radialGradient id="vortexGlowLight" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#fdfdfd"/>
+      <stop offset="30%" stop-color="#e8e8ff" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#f5f5ff" stop-opacity="1"/>
+    </radialGradient>
+    <linearGradient id="softGradient1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#6495ED"/> <stop offset="100%" stop-color="#4169E1"/> </linearGradient>
+    <linearGradient id="softGradient2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFA500"/> <stop offset="100%" stop-color="#FFFF00"/> </linearGradient>
+    
+    <path id="data_path_python" d="M 450 150 Q 550 50 650 100 T 800 150" fill="none" />
+    <path id="data_path_js" d="M 450 150 Q 500 250 600 200 T 750 250" fill="none" />
+    <path id="data_path_chart" d="M 450 150 Q 300 250 150 200 T 100 150" fill="none" />
+    
+    <g id="skill_python_light" opacity="0">
+      <circle cx="0" cy="0" r="15" fill="#f5f5ff" stroke="#6495ED" stroke-width="1.5"/>
+      <text x="0" y="5" font-size="12" font-weight="700" font-family="Courier New, Courier, monospace" fill="#191970" text-anchor="middle">PYTHON</text>
+    </g>
+    <g id="skill_js_light" opacity="0">
+      <circle cx="0" cy="0" r="15" fill="#f5f5ff" stroke="#FFA500" stroke-width="1.5"/>
+      <text x="0" y="5" font-size="12" font-weight="700" font-family="Courier New, Courier, monospace" fill="#191970" text-anchor="middle">JAVASCRIPT</text>
+    </g>
+    </defs>
+
+  <rect width="100%" height="100%" fill="#ffffff"/>
+  
+  <g transform="translate(450,150)" id="vortex_main_light">
+    <circle cx="0" cy="0" r="150" fill="url(#vortexGlowLight)" opacity="1">
+      <animate attributeName="opacity" values="1;0.9;1" dur="5s" repeatCount="indefinite" />
+      <animate attributeName="r" values="150;155;150" dur="7s" repeatCount="indefinite" additive="sum"/>
+    </circle>
+    
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="25s" repeatCount="indefinite" />
+      <circle cx="0" cy="0" r="100" fill="none" stroke="url(#softGradient1)" stroke-width="2" stroke-dasharray="5 5"/>
+      <circle cx="0" cy="0" r="100" fill="none" stroke="url(#softGradient2)" stroke-width="2" stroke-dasharray="5 5" opacity="0.5"/>
+    </g>
+  </g>
+  
+  <g>
+    <use xlink:href="#skill_python_light">
+      <animate attributeName="opacity" values="0;1;1" dur="2s" begin="0.5s" fill="freeze" />
+      <animateMotion dur="4s" repeatCount="indefinite" fill="freeze">
+        <mpath xlink:href="#data_path_python"/>
+      </animateMotion>
+    </use>
+    <use xlink:href="#skill_js_light">
+      <animate attributeName="opacity" values="0;1;1" dur="2s" begin="1.5s" fill="freeze" />
+      <animateMotion dur="4s" repeatCount="indefinite" fill="freeze" rotate="auto">
+        <mpath xlink:href="#data_path_js"/>
+      </animateMotion>
+    </use>
+    
+    <g transform="translate(50,220)" opacity="0">
+        <animate attributeName="opacity" values="0;1;1" dur="1s" begin="3s" fill="freeze" />
+        <rect width="15" height="15" fill="#f5f5ff" stroke="#cfcfef" stroke-width="0.5">
+            <animate attributeName="fill" values="#f5f5ff;#f5f5ff;#FFA500;#f5f5ff" dur="5s" begin="3s" repeatCount="indefinite" />
+        </rect>
+        <rect x="20" width="15" height="15" fill="#f5f5ff" stroke="#cfcfef" stroke-width="0.5">
+            <animate attributeName="fill" values="#f5f5ff;#f5f5ff;#FFA500;#f5f5ff" dur="5s" begin="3.2s" repeatCount="indefinite" />
+        </rect>
+        <rect x="40" width="15" height="15" fill="#f5f5ff" stroke="#cfcfef" stroke-width="0.5">
+            <animate attributeName="fill" values="#f5f5ff;#f5f5ff;#FFA500;#f5f5ff" dur="5s" begin="3.4s" repeatCount="indefinite" />
+        </rect>
+    </g>
+  </g>
+  
+  <text x="800" y="50" font-size="14" font-family="Courier New, Courier, monospace" fill="#191970" text-anchor="end" opacity="0">
+    Impacting with code...
+    <animate attributeName="opacity" values="0;1;1" dur="1s" begin="0.1s" fill="freeze" />
+  </text>
+  
+  <g transform="translate(50,50)" opacity="0">
+    <animate attributeName="opacity" values="0;1;1" dur="1s" begin="0.2s" fill="freeze" />
+    <text x="0" y="20" font-size="24" font-weight="900" font-family="Helvetica, Arial, sans-serif" fill="#191970">crystalng2005</text>
+    <text x="0" y="50" font-size="12" font-family="Courier New, Courier, monospace" fill="#191970" opacity="0.6">Continuous code impact</text>
+  </g>
+  
+  <g transform="translate(50, 270)" opacity="0">
+    <animate attributeName="opacity" values="0;1;1" dur="1s" begin="2s" fill="freeze" />
+    <text x="0" y="0" font-size="20" font-weight="900" font-family="Helvetica, Arial, sans-serif" fill="#191970">24</text>
+    <text x="30" y="0" font-size="12" font-family="Courier New, Courier, monospace" fill="#191970" opacity="0.6">STREAK</text>
+  </g>
+
+</svg>
