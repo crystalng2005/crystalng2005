@@ -51,10 +51,6 @@ A simulation of airplanes taking off and landing in an airport based on user-con
 - Department of Computer Science Ambassador
 - Scholar Ambassador at the University of Warwick
 
-### A little bit about myself!
-
-In terms of sports, I love bouldering and playing badminton with my friends. And, of course watching rom-com genres in between :)
-
 
 ### Contact
 
