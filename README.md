@@ -1,3 +1,9 @@
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/crystalng2005/crystalng2005/main/assets/dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/crystalng2005/crystalng2005/main/assets/light.svg">
+  <img alt="Interactive profile stats and skills banner channeling code impact via a central vortex (Dark/Light mode optimized)." src="https://raw.githubusercontent.com/crystalng2005/crystalng2005/main/assets/light.svg">
+</picture>
+
 ## Hey👋 I'm Crystal
 
 #### 🌱 I'm currently learning
